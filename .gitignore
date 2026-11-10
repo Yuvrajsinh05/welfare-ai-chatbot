@@ -1,0 +1,13 @@
+node_modules/
+.next/
+.env*
+!.env.example
+.npm-cache/
+*.tsbuildinfo
+tmp/
+.test-build/
+.vercel/
+
+# Private: the assessment brief and personal notes must not be published.
+*.pdf
+notes_forme.md

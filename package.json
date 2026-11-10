@@ -1,0 +1,32 @@
+{
+  "name": "ai-welfare-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test \"tests/*.test.ts\"",
+    "probe": "node --import tsx --test tests/probes.test.ts",
+    "db:migrate": "node --env-file=.env.local scripts/migrate.mjs",
+    "test:db": "node --env-file=.env.local --import tsx tests/integration/run.ts",
+    "eval:model": "node --env-file=.env.local --import tsx tests/evaluation/run.ts",
+    "test:http": "next build && node --env-file=.env.local --import tsx tests/integration/run.ts --http"
+  },
+  "dependencies": {
+    "next": "^16.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "pg": "^8.16.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "tsx": "^4.20.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/pg": "^8.15.0"
+  }
+}
