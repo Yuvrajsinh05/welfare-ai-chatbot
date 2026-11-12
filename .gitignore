@@ -7,7 +7,15 @@ node_modules/
 tmp/
 .test-build/
 .vercel/
+firebase-debug.log
 
 # Private: the assessment brief and personal notes must not be published.
 *.pdf
 notes_forme.md
+confusion.md
+interview_questions.md
+practice_tasks.md
+probes_explained.md
+
+# Private local evaluation harness and artefacts
+.local-evaluation/
